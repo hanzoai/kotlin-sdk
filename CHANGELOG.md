@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.1.0-alpha.2 (2025-03-29)
+
+Full Changelog: [v0.1.0-alpha.1...v0.1.0-alpha.2](https://github.com/hanzoai/kotlin-sdk/compare/v0.1.0-alpha.1...v0.1.0-alpha.2)
+
+### Features
+
+* **api:** api update ([#8](https://github.com/hanzoai/kotlin-sdk/issues/8)) ([7ccb4d3](https://github.com/hanzoai/kotlin-sdk/commit/7ccb4d3fd66950ef7c0974cab1b0bcbef05242e6))
+
+
+### Bug Fixes
+
+* **client:** don't call `validate()` during deserialization if we don't have to ([#9](https://github.com/hanzoai/kotlin-sdk/issues/9)) ([fd94704](https://github.com/hanzoai/kotlin-sdk/commit/fd947044521d13d604c3422635f4671334cca0af))
+
+
+### Chores
+
+* update SDK settings ([#6](https://github.com/hanzoai/kotlin-sdk/issues/6)) ([76e44a1](https://github.com/hanzoai/kotlin-sdk/commit/76e44a110dfa82544d0a459f1dcca1b027d76347))
+
 ## 0.1.0-alpha.1 (2025-03-27)
 
 Full Changelog: [v0.0.1-alpha.0...v0.1.0-alpha.1](https://github.com/hanzoai/kotlin-sdk/compare/v0.0.1-alpha.0...v0.1.0-alpha.1)
