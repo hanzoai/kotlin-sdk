@@ -2,18 +2,20 @@
 
 <!-- x-release-please-start-version -->
 
-[![Maven Central](https://img.shields.io/maven-central/v/ai.hanzo.api/hanzo-kotlin)](https://central.sonatype.com/artifact/ai.hanzo.api/hanzo-kotlin/0.1.0-alpha.1)
-[![javadoc](https://javadoc.io/badge2/ai.hanzo.api/hanzo-kotlin/0.1.0-alpha.1/javadoc.svg)](https://javadoc.io/doc/ai.hanzo.api/hanzo-kotlin/0.1.0-alpha.1)
+[![Maven Central](https://img.shields.io/maven-central/v/ai.hanzo.api/hanzo-kotlin)](https://central.sonatype.com/artifact/ai.hanzo.api/hanzo-kotlin/0.1.0-alpha.2)
+[![javadoc](https://javadoc.io/badge2/ai.hanzo.api/hanzo-kotlin/0.1.0-alpha.2/javadoc.svg)](https://javadoc.io/doc/ai.hanzo.api/hanzo-kotlin/0.1.0-alpha.2)
 
 <!-- x-release-please-end -->
 
 The Hanzo Kotlin SDK provides convenient access to the [Hanzo REST API](https://docs.hanzo.ai) from applications written in Kotlin.
 
+The Hanzo Kotlin SDK is similar to the Hanzo Java SDK but with minor differences that make it more ergonomic for use in Kotlin, such as nullable values instead of `Optional`, `Sequence` instead of `Stream`, and suspend functions instead of `CompletableFuture`.
+
 It is generated with [Stainless](https://www.stainless.com/).
 
 <!-- x-release-please-start-version -->
 
-The REST API documentation can be found on [docs.hanzo.ai](https://docs.hanzo.ai). KDocs are also available on [javadoc.io](https://javadoc.io/doc/ai.hanzo.api/hanzo-kotlin/0.1.0-alpha.1).
+The REST API documentation can be found on [docs.hanzo.ai](https://docs.hanzo.ai). KDocs are also available on [javadoc.io](https://javadoc.io/doc/ai.hanzo.api/hanzo-kotlin/0.1.0-alpha.2).
 
 <!-- x-release-please-end -->
 
@@ -24,7 +26,7 @@ The REST API documentation can be found on [docs.hanzo.ai](https://docs.hanzo.ai
 ### Gradle
 
 ```kotlin
-implementation("ai.hanzo.api:hanzo-kotlin:0.1.0-alpha.1")
+implementation("ai.hanzo.api:hanzo-kotlin:0.1.0-alpha.2")
 ```
 
 ### Maven
@@ -33,7 +35,7 @@ implementation("ai.hanzo.api:hanzo-kotlin:0.1.0-alpha.1")
 <dependency>
   <groupId>ai.hanzo.api</groupId>
   <artifactId>hanzo-kotlin</artifactId>
-  <version>0.1.0-alpha.1</version>
+  <version>0.1.0-alpha.2</version>
 </dependency>
 ```
 
@@ -345,6 +347,20 @@ val client: HanzoClient = HanzoOkHttpClient.builder()
         "https://example.com", 8080
       )
     ))
+    .build()
+```
+
+### Environments
+
+The SDK sends requests to the production by default. To send requests to a different environment, configure the client like so:
+
+```kotlin
+import ai.hanzo.api.client.HanzoClient
+import ai.hanzo.api.client.okhttp.HanzoOkHttpClient
+
+val client: HanzoClient = HanzoOkHttpClient.builder()
+    .fromEnv()
+    .sandbox()
     .build()
 ```
 
