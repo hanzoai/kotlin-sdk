@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.0-alpha.3 (2026-02-10)
+
+Full Changelog: [v0.1.0-alpha.2...v0.1.0-alpha.3](https://github.com/hanzoai/kotlin-sdk/compare/v0.1.0-alpha.2...v0.1.0-alpha.3)
+
+### Features
+
+* **api:** api update ([bed6770](https://github.com/hanzoai/kotlin-sdk/commit/bed6770060d839ae8daec9724ae020b26165ce00))
+
+
+### Chores
+
+* **internal:** allow passing args to `./scripts/test` ([3aacce1](https://github.com/hanzoai/kotlin-sdk/commit/3aacce1a9454ea452f108c75f6c687e69077fb14))
+* **internal:** upgrade AssertJ ([180605f](https://github.com/hanzoai/kotlin-sdk/commit/180605fa59abc82d3ef66ab8ff473a11fefd8741))
+
 ## 0.1.0-alpha.2 (2026-01-28)
 
 Full Changelog: [v0.1.0-alpha.1...v0.1.0-alpha.2](https://github.com/hanzoai/kotlin-sdk/compare/v0.1.0-alpha.1...v0.1.0-alpha.2)
